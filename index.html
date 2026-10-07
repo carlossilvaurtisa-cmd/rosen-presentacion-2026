@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La vida de un Rosen — Fotografías de la presentación</title>
+<meta name="description" content="Fotografías de la presentación del libro «La vida de un Rosen. Biografía de Juan de Dios Rosenberg V.», de Rafael Gumucio.">
+<meta name="robots" content="noindex">
+
+<!-- ============================================================
+     BLOQUE 1: TIPOGRAFÍA DEL LIBRO
+     Serif clásica (EB Garamond). Es la misma familia de aire que
+     usa el libro por dentro. Si no hay internet, el navegador cae
+     solo a Georgia / Times: el sitio se sigue viendo bien.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+
+<!-- El ícono de la pestaña: el pétalo del libro, dibujado aquí
+     mismo, sin archivo aparte. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F6F2E9'/%3E%3Cpath d='M32 8C50 18 52 42 32 58C12 42 14 18 32 8Z' fill='%23D51921'/%3E%3C/svg%3E">
+<!-- FIN BLOQUE 1 -->
+</head>
+
+<body>
+
+<!-- ============================================================
+     BLOQUE 1b: EL PÉTALO
+     La forma del pétalo, dibujada una sola vez y reutilizada.
+     No se ve: es el molde que usan los pétalos de la portada.
+     ============================================================ -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <symbol id="petalo" viewBox="0 0 24 26">
+    <path d="M12 0C20 6 21 17 12 26C3 17 4 6 12 0Z"/>
+  </symbol>
+</svg>
+<!-- FIN BLOQUE 1b -->
+
+<!-- ============================================================
+     BLOQUE 2: PORTADA DEL SITIO
+     Aquí están los TEXTOS que puedes cambiar.
+     Para editar: abre este archivo con el Bloc de notas y cambia
+     lo que está entre las etiquetas.
+     ============================================================ -->
+<header class="cab">
+
+  <!-- Los pétalos de la portada del libro. Si no los quieres,
+       borra estas siete líneas y ya: no hay nada más que tocar. -->
+  <span class="petalos" aria-hidden="true">
+    <svg class="p1"><use href="#petalo"/></svg>
+    <svg class="p2"><use href="#petalo"/></svg>
+    <svg class="p3"><use href="#petalo"/></svg>
+    <svg class="p4"><use href="#petalo"/></svg>
+    <svg class="p5"><use href="#petalo"/></svg>
+    <svg class="p6"><use href="#petalo"/></svg>
+  </span>
+
+  <p class="sello">Rosen</p>
+  <h1>La vida de un Rosen</h1>
+  <p class="sub">Biografía de Juan de Dios Rosenberg V.</p>
+  <p class="meta">Presentación del libro &middot; Selección de fotografías</p>
+</header>
+
+<!-- Barra de trabajo: filtros a la izquierda, descarga a la derecha -->
+<div class="barra" id="barra">
+  <nav class="filtros" id="filtros" aria-label="Filtrar por categoría"></nav>
+  <div class="acciones">
+    <span class="cuenta" id="cuenta"></span>
+    <a class="btn-rojo" id="descargarTodo" href="descargas/rosen-fotografias.zip" download="rosen-fotografias.zip">
+      Descargar todo
+    </a>
+    <!-- El enlace a los archivos originales, sin comprimir.
+         Se abre en otra pestaña porque es otro sitio (MEGA).
+         Para cambiarlo, reemplaza la dirección de abajo. -->
+    <a class="btn-linea" id="descargaAlta"
+       href="https://mega.nz/folder/HcAgSQDZ#vQMIJpQkxL67mMblBRcq2w"
+       target="_blank" rel="noopener noreferrer"
+       title="Abrir la carpeta con los archivos originales, sin comprimir">
+      Alta resolución
+    </a>
+  </div>
+</div>
+<!-- FIN BLOQUE 2 -->
+
+<!-- ============================================================
+     BLOQUE 3: LA GALERÍA
+     El hueco donde JavaScript dibuja las fotos que lee de
+     fotos.json. Mientras no haya fotos, se ve el aviso de abajo.
+     ============================================================ -->
+<main>
+  <div class="galeria" id="galeria"></div>
+
+  <div class="vacio" id="vacio" hidden>
+    <p class="vacio-titulo">Todavía no hay fotografías</p>
+    <p class="vacio-texto">
+      Pon las fotos en la carpeta <b>originales</b> y ejecuta
+      <b>preparar_fotos.py</b>. El sitio se arma solo.
+    </p>
+  </div>
+</main>
+<!-- FIN BLOQUE 3 -->
+
+<!-- ============================================================
+     BLOQUE 4: EL VISOR A PANTALLA COMPLETA
+     Se oculta por defecto. Aparece al hacer clic en una foto.
+     ============================================================ -->
+<div class="visor" id="visor" hidden role="dialog" aria-modal="true" aria-label="Visor de fotografías">
+  <div class="visor-barra">
+    <div class="visor-datos">
+      <b id="visorTitulo"></b>
+      <i id="visorNota"></i>
+    </div>
+    <div class="visor-mandos">
+      <span class="visor-contador" id="visorContador"></span>
+      <a class="visor-btn" id="visorDescargar" href="#" download title="Descargar esta foto">Descargar</a>
+      <button class="visor-btn" id="visorCerrar" type="button" title="Cerrar (Esc)">Cerrar</button>
+    </div>
+  </div>
+
+  <button class="flecha izq" id="flechaIzq" type="button" aria-label="Anterior">&#8249;</button>
+  <button class="flecha der" id="flechaDer" type="button" aria-label="Siguiente">&#8250;</button>
+
+  <figure class="visor-lienzo">
+    <img id="visorImagen" src="" alt="">
+  </figure>
+</div>
+<!-- FIN BLOQUE 4 -->
+
+<!-- ============================================================
+     BLOQUE 5: PIE
+     ============================================================ -->
+<footer class="pie">
+  <p>Rafael Gumucio &middot; <i>La vida de un Rosen</i> &middot; Edición privada, 2026</p>
+  <p class="pie-min">GIRO Agencia de Comunicaciones &middot; Concepción, Chile</p>
+  <p class="pie-nota">
+    Las fotos de esta galería están comprimidas para que la página abra rápido
+    (2400 píxeles de lado). Si necesitas los archivos originales, sin comprimir,
+    están en
+    <a href="https://mega.nz/folder/HcAgSQDZ#vQMIJpQkxL67mMblBRcq2w"
+       target="_blank" rel="noopener noreferrer">alta resolución</a>.
+  </p>
+</footer>
+<!-- FIN BLOQUE 5 -->
+
+<script src="galeria.js"></script>
+</body>
+</html>

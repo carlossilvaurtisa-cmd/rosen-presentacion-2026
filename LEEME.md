@@ -1,0 +1,189 @@
+# Entrega de fotografías — *La vida de un Rosen*
+
+Mini sitio para entregarle las fotos al cliente. Está armado con el **diseño del
+libro** (papel hueso, serif clásica, filetes finos, mucho aire) y el **rojo ROSEN**
+usado con cuentagotas: solo en el botón de descargar y en el filtro activo.
+
+---
+
+## Cómo se usa, en tres pasos
+
+**1. Pon las fotos en la carpeta `originales`**
+
+Puedes dejarlas sueltas, o separarlas en subcarpetas. Cada subcarpeta se vuelve
+un filtro en la página.
+
+```
+originales/
+   Retratos/       juan-01.jpg   blanca-02.jpg   ...
+   La planta/      nave-01.jpg   pasillo-02.jpg  ...
+   Archivo/        baruch.jpg    ...
+   suelta.jpg
+```
+
+Si hay fotos sueltas en la raíz de `originales`, caen en el filtro **Fotografías**.
+
+**2. Ejecuta el script**
+
+```
+cd entrega-fotos
+python preparar_fotos.py
+```
+
+El script hace todo solo:
+
+| Qué hace | Detalle |
+|---|---|
+| Gira las verticales | Lee el dato de orientación del EXIF |
+| Reduce | El lado más largo queda en 2400 px |
+| Comprime | JPEG calidad 82, progresivo |
+| Miniaturas | 700 px, para que el muro abra rápido |
+| `fotos.json` | La lista que lee la página |
+| `leyendas.csv` | Nace con las columnas de título y nota, para que las llenes |
+| ZIP | `descargas/rosen-fotografias.zip`, para el botón *Descargar todo* |
+
+> **Los originales nunca se tocan.** Solo se leen.
+
+### Sobre los pies de foto
+
+El script **no inventa pies**. Solo pone uno si el nombre del archivo dice algo
+(`juan-en-la-planta_03` → «Juan en la planta 03»). Si el nombre es el que puso la
+cámara (`DSC02672`) lo deja vacío: en la galería es mejor no tener pie que tener
+uno que no informa a nadie.
+
+Como estas fotos se llaman `DSC0xxxx`, **no hay pies**: la galería queda como un
+muro limpio. Si quieres ponerle pies a algunas, escríbelos en `leyendas.csv`,
+columna `titulo`, y vuelve a correr el script. También hay una columna `nota`,
+que sale en cursiva debajo.
+
+### Sobre los nombres al descargar
+
+Al descargar, cada foto se guarda con **el nombre original del fotógrafo**
+(`DSC02676.jpg`), no con el nombre interno numerado. Así tu cliente puede cruzar
+las fotos con tu catálogo. Si le pones un título en `leyendas.csv`, se descarga
+con ese título en vez del nombre de cámara.
+
+**3. Míralo**
+
+```
+python preparar_fotos.py --servir
+```
+
+Se abre en `http://127.0.0.1:8000/index.html`. Para apagarlo, `Ctrl + C`.
+
+> Si abres `index.html` haciendo **doble clic**, no se ven las fotos: el navegador
+> no deja que una página lea archivos vecinos así. Hay que usar `--servir`
+> (o subirlo a un hosting).
+
+---
+
+## Textos que puedes cambiar
+
+| Qué | Dónde |
+|---|---|
+| Título, subtítulo y fecha de la portada | `index.html`, bloque **BLOQUE 2** |
+| Pie con el crédito | `index.html`, bloque **BLOQUE 5** |
+| Título y nota de cada foto | `leyendas.csv` (se respeta al volver a correr) |
+| Tamaño y calidad | `--max 3000 --calidad 88` |
+
+Para cambiar el título de una foto: abre `leyendas.csv`, escribe en la columna
+`titulo`, guarda y vuelve a correr el script.
+
+---
+
+## Las fotos que se usaron
+
+Las 120 fotos de `_fotos eventoFINALES`, en orden de captura.
+
+| | |
+|---|---|
+| Originales | 2.999 MB (120 archivos de ~27 MB, 6192 × 4128) |
+| Para la web | **76 MB** — un 97 % menos |
+| ZIP de todo | 76 MB |
+| Verticales / horizontales | 70 / 50 |
+
+**Aviso:** en esa carpeta quedaron **6 descargas a medias** de MEGA
+(`.getxfer.*.mega`), que están detenidas y no crecen. Las ignoré porque no son
+fotos válidas. Si eran fotos que tenían que ir, hay que volver a bajarlas y
+correr el script de nuevo.
+
+**La fecha de las fotos no es confiable.** Las 120 tienen fecha EXIF entre las
+23:58 y las 00:03, y el archivo dice `Software: Adobe Lightroom 9.6` — o sea que
+la exportación reescribió las fechas y borró el modelo de cámara. Por eso la
+portada **no** dice ninguna fecha. Si me pasas la fecha real, la agrego.
+
+---
+
+## Opciones del script
+
+```
+python preparar_fotos.py --max 3000 --calidad 88     # más grandes y más pesadas
+python preparar_fotos.py --originales "D:\fotos"     # usar otra carpeta de entrada
+python preparar_fotos.py --servir                    # ver el resultado
+```
+
+| Opción | Por defecto | Para qué |
+|---|---|---|
+| `--originales` | `originales` | Carpeta de entrada |
+| `--max` | `2400` | Lado más largo de la foto grande, en píxeles |
+| `--calidad` | `82` | Calidad JPEG (1 a 100) |
+| `--servir` | — | Levanta el servidor local y abre el navegador |
+
+---
+
+## Publicar para mandarle el enlace al cliente
+
+La carpeta entera es el sitio. Se sube tal cual, sin compilar nada:
+
+- **Netlify Drop** → arrastra la carpeta `entrega-fotos` a `app.netlify.com/drop`.
+  Devuelve un enlace en segundos.
+- **Cloudflare Pages**, **Vercel** o **GitHub Pages** funcionan igual.
+
+Antes de subirla, corre el script una última vez para que el ZIP y las miniaturas
+queden al día.
+
+---
+
+## Qué hay adentro
+
+```
+entrega-fotos/
+  index.html            la página
+  estilos.css           el look del libro
+  galeria.js            filtros, visor y descargas
+  preparar_fotos.py     el script que prepara todo
+  fotos.json            la lista de fotos (lo escribe el script)
+  leyendas.csv          títulos y notas (editable)
+  originales/           ← aquí pones las fotos crudas
+  fotos/                fotos comprimidas + min/
+  descargas/            el ZIP
+  LEEME.md              este archivo
+```
+
+---
+
+## La paleta usada
+
+Del libro, no de la marca:
+
+| Uso | Color |
+|---|---|
+| Papel | `#F6F2E9` |
+| Papel (tono bajo) | `#EDE7DB` |
+| Tinta | `#1A1A1A` |
+| Tinta suave | `#6E6862` |
+| Filetes | `rgba(26,26,26,.14)` |
+| **Rojo del libro** (acento) | `#D51921` |
+
+**De dónde salió el rojo.** No es el borgoña de la marca: se midió sobre las
+propias fotos de la presentación. Sobre 822.901 píxeles de rojo bien iluminado
+—la portada y el telón de fondo— la mediana dio `#D51921`. Es el vermellón de la
+tapa, y es el único color del sitio.
+
+La **marca ROSEN** (rojo borgoña + blanco + azul, óvalos concéntricos, líneas
+horizontales, sans redondeada gruesa) **no se usa**: el sitio sigue al libro.
+
+Los **pétalos** de la portada aparecen sueltos y apenas transparentes en la
+cabecera, como textura. Son lo único que hace que el sitio se reconozca como
+«el libro». Para sacarlos: borra el bloque `<span class="petalos">` en
+`index.html` (está dentro del **BLOQUE 2**).

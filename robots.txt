@@ -1,0 +1,4 @@
+# Esta galería es una entrega privada para el cliente.
+# Le pedimos a los buscadores que no la indexen.
+User-agent: *
+Disallow: /

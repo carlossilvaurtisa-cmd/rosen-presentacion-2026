@@ -1,0 +1,408 @@
+/* ============================================================
+   BLOQUE 6: LA PALETA Y LOS AJUSTES BASE
+   ------------------------------------------------------------
+   El sitio imita al LIBRO, no a la marca:
+   · papel hueso de fondo (no blanco puro, no rojo/azul de marca)
+   · tinta negra para el texto
+   · filetes finísimos en vez de bordes duros
+   · una serif clásica para TODO, también para los botones
+   · el rojo de ROSEN aparece UNA sola vez: en el botón de
+     descargar y en el subrayado del filtro activo.
+   ============================================================ */
+:root{
+  --hueso:      #F6F2E9;   /* el papel del libro (crema cálida)       */
+  --hueso-hondo:#EDE7DB;   /* un tono más abajo, para el hover       */
+  --tinta:      #1A1A1A;   /* el texto impreso                       */
+  --tinta-suave:#6E6862;   /* pies, notas, datos secundarios         */
+  --filete:     rgba(26,26,26,.14);  /* las líneas finas             */
+
+  /* El rojo del libro, medido sobre las fotos de la presentación:
+     sobre 822.901 píxeles de rojo bien iluminado la mediana dio
+     #D51921. No es el borgoña de la marca: es el vermellón de la
+     portada, y es el único color del sitio. */
+  --rojo:       #D51921;
+  --rojo-hondo: #AB1119;
+  --serif: 'EB Garamond', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+
+  --ancho: 1500px;         /* el ancho máximo de la página           */
+  --aire:  clamp(20px, 4vw, 54px);  /* el margen lateral              */
+}
+
+*,*::before,*::after{ box-sizing:border-box }
+
+html{ -webkit-text-size-adjust:100% }
+
+body{
+  margin:0;
+  background:var(--hueso);
+  color:var(--tinta);
+  font-family:var(--serif);
+  font-size:17px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+img{ display:block; max-width:100% }
+button{ font-family:inherit }
+
+/* Un detalle fino: las letras de los rótulos pequeños van
+   separadas y en mayúsculas, como los epígrafes del libro. */
+.sello,.meta,.cuenta,.btn-rojo,.btn-linea,.filtro,.pie-min{
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:11px;
+}
+/* FIN BLOQUE 6 */
+
+
+/* ============================================================
+   BLOQUE 7: LA PORTADA
+   Título grande, subtítulo en cursiva, una línea fina debajo.
+   Es la página de título del libro, trasladada a la pantalla.
+   ============================================================ */
+.cab{
+  position:relative;          /* los pétalos se colocan dentro */
+  max-width:var(--ancho);
+  margin:0 auto;
+  padding:clamp(38px,7vw,90px) var(--aire) clamp(22px,3vw,34px);
+}
+
+.sello{
+  margin:0 0 clamp(18px,3vw,34px);
+  color:var(--rojo);
+  font-weight:500;
+}
+
+h1{
+  margin:0;
+  font-weight:400;
+  font-size:clamp(34px,6.4vw,74px);
+  line-height:1.02;
+  letter-spacing:-.012em;
+}
+
+.sub{
+  margin:.5em 0 0;
+  font-style:italic;
+  font-size:clamp(16px,2.1vw,22px);
+  color:var(--tinta-suave);
+}
+
+.meta{
+  margin:clamp(20px,3.4vw,38px) 0 0;
+  padding-top:16px;
+  border-top:1px solid var(--filete);
+  color:var(--tinta-suave);
+}
+
+/* ------------------------------------------------------------
+   LOS PÉTALOS — el motivo de la portada del libro
+   La portada es papel crema, tipografía roja y pétalos rojos
+   cayendo sobre el colchón. Los pétalos son lo único que hace
+   que este sitio se reconozca como «el libro» y no como una
+   galería elegante cualquiera. Van sueltos, chicos y apenas
+   transparentes: son textura, no dibujito.
+   Si no los quieres, borra <span class="petalos"> en index.html.
+   ------------------------------------------------------------ */
+.petalos{
+  position:absolute; inset:0;
+  pointer-events:none;        /* no estorban los clics */
+}
+.petalos svg{
+  position:absolute;
+  fill:var(--rojo);
+  width:var(--t,16px);
+  height:calc(var(--t,16px) * 1.084);
+  transform:rotate(var(--g,0deg));
+  opacity:var(--o,.6);
+}
+/* Cada pétalo: tamaño --t, giro --g, transparencia --o, y su sitio */
+.p1{ --t:25px; --g:-16deg; --o:.85; top:15%;    right:23% }
+.p2{ --t:17px; --g:26deg;  --o:.66; top:44%;    right:10% }
+.p3{ --t:14px; --g:64deg;  --o:.5;  top:66%;    right:29% }
+.p4{ --t:12px; --g:-44deg; --o:.45; top:23%;    right:5%  }
+.p5{ --t:20px; --g:112deg; --o:.58; bottom:8%;  right:18% }
+.p6{ --t:11px; --g:8deg;   --o:.42; bottom:26%; right:43% }
+
+/* El texto siempre por encima de los pétalos */
+.cab > *:not(.petalos){ position:relative; z-index:1 }
+
+/* En pantalla chica no hay lugar para textura: se van */
+@media (max-width:760px){ .petalos{ display:none } }
+/* FIN BLOQUE 7 */
+
+
+/* ============================================================
+   BLOQUE 8: LA BARRA DE FILTROS
+   Se queda pegada arriba al bajar, con el mismo color del papel
+   semitransparente. A la derecha, el único rojo del sitio.
+   ============================================================ */
+.barra{
+  position:sticky; top:0; z-index:20;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  max-width:var(--ancho);
+  margin:0 auto;
+  padding:12px var(--aire);
+  background:rgba(247,244,238,.9);
+  -webkit-backdrop-filter:saturate(1.4) blur(8px);
+  backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--filete);
+}
+
+.filtros{ display:flex; gap:22px; flex-wrap:wrap; flex:1 1 auto }
+
+.filtro{
+  appearance:none;
+  background:none; border:0; padding:6px 0;
+  color:var(--tinta-suave);
+  font-weight:400;
+  cursor:pointer;
+  border-bottom:1px solid transparent;
+  transition:color .15s, border-color .15s;
+}
+.filtro:hover{ color:var(--tinta) }
+.filtro[aria-pressed="true"]{
+  color:var(--tinta);
+  border-bottom-color:var(--rojo);
+}
+
+.acciones{ display:flex; align-items:center; gap:18px; flex:0 0 auto }
+
+.cuenta{ color:var(--tinta-suave); font-variant-numeric:tabular-nums }
+
+.btn-rojo{
+  display:inline-block;
+  padding:10px 20px;
+  color:var(--hueso);
+  background:var(--rojo);
+  text-decoration:none;
+  border-radius:2px;
+  transition:background .15s;
+}
+.btn-rojo:hover{ background:var(--rojo-hondo) }
+.btn-rojo:active{ transform:translateY(1px) }
+
+/* El botón de al lado: menos peso visual, porque la descarga
+   rápida —el ZIP de la galería— es la acción principal. */
+.btn-linea{
+  display:inline-block;
+  padding:9px 18px;
+  color:var(--rojo);
+  border:1px solid rgba(213,25,33,.42);
+  border-radius:2px;
+  text-decoration:none;
+  white-space:nowrap;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.btn-linea:hover{ background:var(--rojo); border-color:var(--rojo); color:var(--hueso) }
+.btn-linea:active{ transform:translateY(1px) }
+/* FIN BLOQUE 8 */
+
+
+/* ============================================================
+   BLOQUE 9: LA GALERÍA
+   Se arma con "columnas" del navegador (CSS columns). Es la
+   forma más liviana de tener un muro de fotos que respeta el
+   alto real de cada imagen: verticales y horizontales conviven
+   sin recortarse.
+   ============================================================ */
+.galeria{
+  max-width:var(--ancho);
+  margin:0 auto;
+  padding:clamp(26px,3.5vw,44px) var(--aire) 40px;
+  column-count:3;
+  column-gap:clamp(14px,1.6vw,24px);
+}
+@media (max-width:1050px){ .galeria{ column-count:2 } }
+@media (max-width:620px) { .galeria{ column-count:1 } }
+
+.foto{
+  break-inside:avoid;
+  margin:0 0 clamp(14px,1.6vw,24px);
+}
+
+.foto-marco{
+  position:relative;
+  display:block;
+  width:100%;
+  padding:0; border:0;
+  background:var(--hueso-hondo);
+  cursor:zoom-in;
+  overflow:hidden;
+  line-height:0;
+}
+
+.foto-marco img{
+  width:100%;
+  height:auto;
+  transition:opacity .35s ease, transform .5s ease;
+}
+.foto-marco img.cargando{ opacity:0 }
+.foto-marco:hover img{ transform:scale(1.012) }
+
+.foto-pie{
+  display:block;
+  margin-top:9px;
+  text-align:center;
+  font-style:italic;
+  font-size:13.5px;
+  line-height:1.4;
+  color:var(--tinta-suave);
+}
+.foto-pie b{ display:block; font-style:normal; font-weight:400; color:var(--tinta) }
+/* FIN BLOQUE 9 */
+
+
+/* ============================================================
+   BLOQUE 10: EL AVISO DE GALERÍA VACÍA
+   ============================================================ */
+.vacio{
+  max-width:620px;
+  margin:clamp(50px,9vw,120px) auto clamp(70px,10vw,140px);
+  padding:0 var(--aire);
+  text-align:center;
+}
+.vacio-titulo{
+  margin:0 0 .35em;
+  font-size:clamp(21px,3.2vw,29px);
+}
+.vacio-texto{
+  margin:0;
+  font-style:italic;
+  color:var(--tinta-suave);
+}
+.vacio-texto b{ font-style:normal; font-weight:500 }
+/* FIN BLOQUE 10 */
+
+
+/* ============================================================
+   BLOQUE 11: EL VISOR A PANTALLA COMPLETA
+   Fondo casi negro (como ver un fotograma a oscuras), y la
+   foto entera, sin recortar.
+   ============================================================ */
+.visor{
+  position:fixed; inset:0; z-index:60;
+  background:#0D0D0D;
+  display:flex; flex-direction:column;
+}
+.visor[hidden]{ display:none }
+
+.visor-barra{
+  display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+  padding:12px clamp(14px,2.4vw,26px);
+  border-bottom:1px solid rgba(247,244,238,.14);
+  color:var(--hueso);
+}
+
+.visor-datos{ flex:1 1 240px; min-width:0 }
+.visor-datos b{ display:block; font-weight:400; font-size:15.5px; line-height:1.3 }
+.visor-datos i{ font-size:12.5px; color:rgba(247,244,238,.6) }
+
+.visor-mandos{ display:flex; align-items:center; gap:14px; flex:0 0 auto }
+
+.visor-contador{
+  font-size:12px; letter-spacing:.1em;
+  color:rgba(247,244,238,.65);
+  font-variant-numeric:tabular-nums;
+}
+
+.visor-btn{
+  appearance:none;
+  background:none;
+  padding:7px 15px;
+  color:var(--hueso);
+  border:1px solid rgba(247,244,238,.3);
+  border-radius:2px;
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  text-decoration:none;
+  cursor:pointer;
+  transition:border-color .15s, color .15s, background .15s;
+}
+.visor-btn:hover{ border-color:var(--hueso); background:rgba(247,244,238,.08) }
+#visorDescargar:hover{ background:var(--rojo); border-color:var(--rojo) }
+
+.visor-lienzo{
+  flex:1 1 auto;
+  margin:0;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(10px,2vw,24px);
+  min-height:0;
+}
+#visorImagen{
+  max-width:100%;
+  max-height:100%;
+  width:auto; height:auto;
+  object-fit:contain;
+}
+
+.flecha{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:clamp(38px,5vw,54px); height:clamp(58px,8vw,86px);
+  display:flex; align-items:center; justify-content:center;
+  background:none; border:0; cursor:pointer;
+  color:rgba(247,244,238,.55);
+  font-size:34px; line-height:1;
+  transition:color .15s, background .15s;
+}
+.flecha:hover{ color:var(--hueso); background:rgba(247,244,238,.06) }
+.flecha.izq{ left:0 }
+.flecha.der{ right:0 }
+/* FIN BLOQUE 11 */
+
+
+/* ============================================================
+   BLOQUE 12: EL PIE
+   ============================================================ */
+.pie{
+  max-width:var(--ancho);
+  margin:0 auto;
+  padding:26px var(--aire) 60px;
+  border-top:1px solid var(--filete);
+  color:var(--tinta-suave);
+  font-size:13.5px;
+}
+.pie p{ margin:0 }
+.pie-min{ margin-top:6px !important; color:var(--tinta-suave); opacity:.72 }
+.pie-nota{
+  margin-top:16px !important;
+  max-width:62ch;
+  color:var(--tinta-suave);
+}
+.pie-nota a{ color:var(--rojo); text-decoration:none; border-bottom:1px solid rgba(213,25,33,.35) }
+.pie-nota a:hover{ border-bottom-color:var(--rojo) }
+/* FIN BLOQUE 12 */
+
+
+/* ============================================================
+   BLOQUE 13: ACCESIBILIDAD Y DETALLES
+   Quien pidió menos movimiento, no lo recibe.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; animation:none !important }
+}
+
+/* En celular la barra se reacomoda: el contador arriba y los dos
+   botones de descarga abajo, uno al lado del otro. */
+@media (max-width:620px){
+  .barra{ gap:10px }
+  .acciones{ width:100%; flex-wrap:wrap; gap:10px; justify-content:flex-start }
+  .cuenta{ width:100% }
+  .btn-rojo,.btn-linea{ padding:9px 15px }
+}
+
+/* Foco visible para navegar con teclado (Tab) */
+.filtro:focus-visible,.btn-rojo:focus-visible,.btn-linea:focus-visible,
+.visor-btn:focus-visible,.flecha:focus-visible,.foto-marco:focus-visible{
+  outline:2px solid var(--rojo);
+  outline-offset:3px;
+}
+.visor .btn-rojo:focus-visible,
+.visor-btn:focus-visible{ outline-color:var(--hueso) }
+
+/* Impresión: la galería como una hoja de contactos */
+@media print{
+  .barra,.visor,.flecha{ display:none !important }
+  .galeria{ column-count:2 }
+}
+/* FIN BLOQUE 13 */
