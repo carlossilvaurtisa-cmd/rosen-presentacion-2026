@@ -84,30 +84,45 @@ Se abre en `http://127.0.0.1:8000/index.html`. Para apagarlo, `Ctrl + C`.
 | Título, subtítulo y fecha de la portada | `index.html`, bloque **BLOQUE 2** |
 | Pie con el crédito | `index.html`, bloque **BLOQUE 5** |
 | Título y nota de cada foto | `leyendas.csv` (se respeta al volver a correr) |
+| **Fotos que NO deben salir** | `excluir.txt` |
+| El enlace de alta resolución | `index.html`, bloques **BLOQUE 2** y **BLOQUE 5** |
 | Tamaño y calidad | `--max 3000 --calidad 88` |
 
 Para cambiar el título de una foto: abre `leyendas.csv`, escribe en la columna
 `titulo`, guarda y vuelve a correr el script.
 
+### Sacar una foto de la galería
+
+Abre `excluir.txt` y escribe el nombre del archivo original, uno por línea:
+
+```
+DSC03184.jpg
+```
+
+Vuelve a correr el script. La foto sale de la galería, del ZIP y del contador.
+
+**El original NO se borra** — solo se deja fuera del sitio. Y queda excluida de
+forma permanente: por más que vuelvas a correr el script, no reaparece. Para
+devolverla, bórrala de `excluir.txt` y vuelve a correr.
+
+Hoy hay una excluida: **`DSC03184.jpg`**, el autor sosteniendo el libro con gesto
+serio. Quedó como última foto de la galería.
+
 ---
 
 ## Las fotos que se usaron
 
-Las 120 fotos de `_fotos eventoFINALES`, en orden de captura.
+Las **126** fotos de `_fotos eventoFINALES`, en orden de captura. Una está
+excluida, así que la galería muestra **125**.
 
 | | |
 |---|---|
-| Originales | 2.999 MB (120 archivos de ~27 MB, 6192 × 4128) |
-| Para la web | **76 MB** — un 97 % menos |
-| ZIP de todo | 76 MB |
-| Verticales / horizontales | 70 / 50 |
+| Originales | 3.120 MB (126 archivos de ~25 MB, 6192 × 4128) |
+| Para la web | **80 MB** — un 97 % menos |
+| ZIP de todo | 80 MB (125 fotos) |
+| Excluidas | 1 → `DSC03184.jpg` |
 
-**Aviso:** en esa carpeta quedaron **6 descargas a medias** de MEGA
-(`.getxfer.*.mega`), que están detenidas y no crecen. Las ignoré porque no son
-fotos válidas. Si eran fotos que tenían que ir, hay que volver a bajarlas y
-correr el script de nuevo.
-
-**La fecha de las fotos no es confiable.** Las 120 tienen fecha EXIF entre las
+**La fecha de las fotos no es confiable.** Todas tienen fecha EXIF entre las
 23:58 y las 00:03, y el archivo dice `Software: Adobe Lightroom 9.6` — o sea que
 la exportación reescribió las fechas y borró el modelo de cámara. Por eso la
 portada **no** dice ninguna fecha. Si me pasas la fecha real, la agrego.
@@ -211,6 +226,7 @@ entrega-fotos/
   preparar_fotos.py     el script que prepara todo
   fotos.json            la lista de fotos (lo escribe el script)
   leyendas.csv          títulos y notas (editable)
+  excluir.txt           fotos que no deben salir (editable)
   robots.txt            le pide a los buscadores que no indexen la galería
   .nojekyll             le dice a GitHub Pages que no procese los archivos
   originales/           ← aquí pones las fotos crudas
