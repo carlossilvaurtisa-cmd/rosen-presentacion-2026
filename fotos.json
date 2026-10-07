@@ -1,9 +1,9 @@
 {
  "titulo": "La vida de un Rosen",
  "subtitulo": "Biografía de Juan de Dios Rosenberg V.",
- "generado": "2026-10-07 17:28",
+ "generado": "2026-10-07 17:49",
  "zip": "descargas/rosen-fotografias.zip",
- "total": 120,
+ "total": 125,
  "categorias": [
   "Fotografías"
  ],
@@ -218,8 +218,30 @@
    "original": "DSC02774.jpg"
   },
   {
-   "archivo": "fotos/020-dsc02789.jpg",
-   "miniatura": "fotos/min/020-dsc02789.jpg",
+   "archivo": "fotos/020-dsc02786.jpg",
+   "miniatura": "fotos/min/020-dsc02786.jpg",
+   "categoria": "Fotografías",
+   "titulo": "",
+   "nota": "",
+   "ancho": 1600,
+   "alto": 2400,
+   "peso_kb": 848,
+   "original": "DSC02786.jpg"
+  },
+  {
+   "archivo": "fotos/021-dsc02788.jpg",
+   "miniatura": "fotos/min/021-dsc02788.jpg",
+   "categoria": "Fotografías",
+   "titulo": "",
+   "nota": "",
+   "ancho": 1522,
+   "alto": 2400,
+   "peso_kb": 800,
+   "original": "DSC02788.jpg"
+  },
+  {
+   "archivo": "fotos/022-dsc02789.jpg",
+   "miniatura": "fotos/min/022-dsc02789.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -229,8 +251,8 @@
    "original": "DSC02789.jpg"
   },
   {
-   "archivo": "fotos/021-dsc02790.jpg",
-   "miniatura": "fotos/min/021-dsc02790.jpg",
+   "archivo": "fotos/023-dsc02790.jpg",
+   "miniatura": "fotos/min/023-dsc02790.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -240,8 +262,8 @@
    "original": "DSC02790.jpg"
   },
   {
-   "archivo": "fotos/022-dsc02797.jpg",
-   "miniatura": "fotos/min/022-dsc02797.jpg",
+   "archivo": "fotos/024-dsc02797.jpg",
+   "miniatura": "fotos/min/024-dsc02797.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -251,8 +273,8 @@
    "original": "DSC02797.jpg"
   },
   {
-   "archivo": "fotos/023-dsc02801.jpg",
-   "miniatura": "fotos/min/023-dsc02801.jpg",
+   "archivo": "fotos/025-dsc02801.jpg",
+   "miniatura": "fotos/min/025-dsc02801.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -262,8 +284,8 @@
    "original": "DSC02801.jpg"
   },
   {
-   "archivo": "fotos/024-dsc02802.jpg",
-   "miniatura": "fotos/min/024-dsc02802.jpg",
+   "archivo": "fotos/026-dsc02802.jpg",
+   "miniatura": "fotos/min/026-dsc02802.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -273,8 +295,8 @@
    "original": "DSC02802.jpg"
   },
   {
-   "archivo": "fotos/025-dsc02810.jpg",
-   "miniatura": "fotos/min/025-dsc02810.jpg",
+   "archivo": "fotos/027-dsc02810.jpg",
+   "miniatura": "fotos/min/027-dsc02810.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -284,8 +306,8 @@
    "original": "DSC02810.jpg"
   },
   {
-   "archivo": "fotos/026-dsc02812.jpg",
-   "miniatura": "fotos/min/026-dsc02812.jpg",
+   "archivo": "fotos/028-dsc02812.jpg",
+   "miniatura": "fotos/min/028-dsc02812.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -295,8 +317,19 @@
    "original": "DSC02812.jpg"
   },
   {
-   "archivo": "fotos/027-dsc02817.jpg",
-   "miniatura": "fotos/min/027-dsc02817.jpg",
+   "archivo": "fotos/029-dsc02814.jpg",
+   "miniatura": "fotos/min/029-dsc02814.jpg",
+   "categoria": "Fotografías",
+   "titulo": "",
+   "nota": "",
+   "ancho": 1600,
+   "alto": 2400,
+   "peso_kb": 698,
+   "original": "DSC02814.jpg"
+  },
+  {
+   "archivo": "fotos/030-dsc02817.jpg",
+   "miniatura": "fotos/min/030-dsc02817.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -306,8 +339,8 @@
    "original": "DSC02817.jpg"
   },
   {
-   "archivo": "fotos/028-dsc02818.jpg",
-   "miniatura": "fotos/min/028-dsc02818.jpg",
+   "archivo": "fotos/031-dsc02818.jpg",
+   "miniatura": "fotos/min/031-dsc02818.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -317,8 +350,8 @@
    "original": "DSC02818.jpg"
   },
   {
-   "archivo": "fotos/029-dsc02821.jpg",
-   "miniatura": "fotos/min/029-dsc02821.jpg",
+   "archivo": "fotos/032-dsc02821.jpg",
+   "miniatura": "fotos/min/032-dsc02821.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -328,8 +361,8 @@
    "original": "DSC02821.jpg"
   },
   {
-   "archivo": "fotos/030-dsc02827.jpg",
-   "miniatura": "fotos/min/030-dsc02827.jpg",
+   "archivo": "fotos/033-dsc02827.jpg",
+   "miniatura": "fotos/min/033-dsc02827.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -339,8 +372,8 @@
    "original": "DSC02827.jpg"
   },
   {
-   "archivo": "fotos/031-dsc02828.jpg",
-   "miniatura": "fotos/min/031-dsc02828.jpg",
+   "archivo": "fotos/034-dsc02828.jpg",
+   "miniatura": "fotos/min/034-dsc02828.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -350,8 +383,8 @@
    "original": "DSC02828.jpg"
   },
   {
-   "archivo": "fotos/032-dsc02830.jpg",
-   "miniatura": "fotos/min/032-dsc02830.jpg",
+   "archivo": "fotos/035-dsc02830.jpg",
+   "miniatura": "fotos/min/035-dsc02830.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -361,8 +394,19 @@
    "original": "DSC02830.jpg"
   },
   {
-   "archivo": "fotos/033-dsc02834.jpg",
-   "miniatura": "fotos/min/033-dsc02834.jpg",
+   "archivo": "fotos/036-dsc02832.jpg",
+   "miniatura": "fotos/min/036-dsc02832.jpg",
+   "categoria": "Fotografías",
+   "titulo": "",
+   "nota": "",
+   "ancho": 1600,
+   "alto": 2400,
+   "peso_kb": 582,
+   "original": "DSC02832.jpg"
+  },
+  {
+   "archivo": "fotos/037-dsc02834.jpg",
+   "miniatura": "fotos/min/037-dsc02834.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -372,8 +416,8 @@
    "original": "DSC02834.jpg"
   },
   {
-   "archivo": "fotos/034-dsc02842.jpg",
-   "miniatura": "fotos/min/034-dsc02842.jpg",
+   "archivo": "fotos/038-dsc02842.jpg",
+   "miniatura": "fotos/min/038-dsc02842.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -383,8 +427,8 @@
    "original": "DSC02842.jpg"
   },
   {
-   "archivo": "fotos/035-dsc02850.jpg",
-   "miniatura": "fotos/min/035-dsc02850.jpg",
+   "archivo": "fotos/039-dsc02850.jpg",
+   "miniatura": "fotos/min/039-dsc02850.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -394,8 +438,8 @@
    "original": "DSC02850.jpg"
   },
   {
-   "archivo": "fotos/036-dsc02852.jpg",
-   "miniatura": "fotos/min/036-dsc02852.jpg",
+   "archivo": "fotos/040-dsc02852.jpg",
+   "miniatura": "fotos/min/040-dsc02852.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -405,8 +449,8 @@
    "original": "DSC02852.jpg"
   },
   {
-   "archivo": "fotos/037-dsc02854.jpg",
-   "miniatura": "fotos/min/037-dsc02854.jpg",
+   "archivo": "fotos/041-dsc02854.jpg",
+   "miniatura": "fotos/min/041-dsc02854.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -416,8 +460,8 @@
    "original": "DSC02854.jpg"
   },
   {
-   "archivo": "fotos/038-dsc02858.jpg",
-   "miniatura": "fotos/min/038-dsc02858.jpg",
+   "archivo": "fotos/042-dsc02858.jpg",
+   "miniatura": "fotos/min/042-dsc02858.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -427,8 +471,8 @@
    "original": "DSC02858.jpg"
   },
   {
-   "archivo": "fotos/039-dsc02859.jpg",
-   "miniatura": "fotos/min/039-dsc02859.jpg",
+   "archivo": "fotos/043-dsc02859.jpg",
+   "miniatura": "fotos/min/043-dsc02859.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -438,8 +482,8 @@
    "original": "DSC02859.jpg"
   },
   {
-   "archivo": "fotos/040-dsc02860.jpg",
-   "miniatura": "fotos/min/040-dsc02860.jpg",
+   "archivo": "fotos/044-dsc02860.jpg",
+   "miniatura": "fotos/min/044-dsc02860.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -449,8 +493,8 @@
    "original": "DSC02860.jpg"
   },
   {
-   "archivo": "fotos/041-dsc02861.jpg",
-   "miniatura": "fotos/min/041-dsc02861.jpg",
+   "archivo": "fotos/045-dsc02861.jpg",
+   "miniatura": "fotos/min/045-dsc02861.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -460,8 +504,8 @@
    "original": "DSC02861.jpg"
   },
   {
-   "archivo": "fotos/042-dsc02863.jpg",
-   "miniatura": "fotos/min/042-dsc02863.jpg",
+   "archivo": "fotos/046-dsc02863.jpg",
+   "miniatura": "fotos/min/046-dsc02863.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -471,8 +515,8 @@
    "original": "DSC02863.jpg"
   },
   {
-   "archivo": "fotos/043-dsc02864.jpg",
-   "miniatura": "fotos/min/043-dsc02864.jpg",
+   "archivo": "fotos/047-dsc02864.jpg",
+   "miniatura": "fotos/min/047-dsc02864.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -482,8 +526,8 @@
    "original": "DSC02864.jpg"
   },
   {
-   "archivo": "fotos/044-dsc02867.jpg",
-   "miniatura": "fotos/min/044-dsc02867.jpg",
+   "archivo": "fotos/048-dsc02867.jpg",
+   "miniatura": "fotos/min/048-dsc02867.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -493,8 +537,8 @@
    "original": "DSC02867.jpg"
   },
   {
-   "archivo": "fotos/045-dsc02872.jpg",
-   "miniatura": "fotos/min/045-dsc02872.jpg",
+   "archivo": "fotos/049-dsc02872.jpg",
+   "miniatura": "fotos/min/049-dsc02872.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -504,8 +548,8 @@
    "original": "DSC02872.jpg"
   },
   {
-   "archivo": "fotos/046-dsc02873.jpg",
-   "miniatura": "fotos/min/046-dsc02873.jpg",
+   "archivo": "fotos/050-dsc02873.jpg",
+   "miniatura": "fotos/min/050-dsc02873.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -515,8 +559,8 @@
    "original": "DSC02873.jpg"
   },
   {
-   "archivo": "fotos/047-dsc02880.jpg",
-   "miniatura": "fotos/min/047-dsc02880.jpg",
+   "archivo": "fotos/051-dsc02880.jpg",
+   "miniatura": "fotos/min/051-dsc02880.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -526,8 +570,8 @@
    "original": "DSC02880.jpg"
   },
   {
-   "archivo": "fotos/048-dsc02883.jpg",
-   "miniatura": "fotos/min/048-dsc02883.jpg",
+   "archivo": "fotos/052-dsc02883.jpg",
+   "miniatura": "fotos/min/052-dsc02883.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -537,8 +581,8 @@
    "original": "DSC02883.jpg"
   },
   {
-   "archivo": "fotos/049-dsc02884.jpg",
-   "miniatura": "fotos/min/049-dsc02884.jpg",
+   "archivo": "fotos/053-dsc02884.jpg",
+   "miniatura": "fotos/min/053-dsc02884.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -548,8 +592,8 @@
    "original": "DSC02884.jpg"
   },
   {
-   "archivo": "fotos/050-dsc02888.jpg",
-   "miniatura": "fotos/min/050-dsc02888.jpg",
+   "archivo": "fotos/054-dsc02888.jpg",
+   "miniatura": "fotos/min/054-dsc02888.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -559,8 +603,8 @@
    "original": "DSC02888.jpg"
   },
   {
-   "archivo": "fotos/051-dsc02889.jpg",
-   "miniatura": "fotos/min/051-dsc02889.jpg",
+   "archivo": "fotos/055-dsc02889.jpg",
+   "miniatura": "fotos/min/055-dsc02889.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -570,8 +614,8 @@
    "original": "DSC02889.jpg"
   },
   {
-   "archivo": "fotos/052-dsc02891.jpg",
-   "miniatura": "fotos/min/052-dsc02891.jpg",
+   "archivo": "fotos/056-dsc02891.jpg",
+   "miniatura": "fotos/min/056-dsc02891.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -581,8 +625,8 @@
    "original": "DSC02891.jpg"
   },
   {
-   "archivo": "fotos/053-dsc02892.jpg",
-   "miniatura": "fotos/min/053-dsc02892.jpg",
+   "archivo": "fotos/057-dsc02892.jpg",
+   "miniatura": "fotos/min/057-dsc02892.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -592,8 +636,19 @@
    "original": "DSC02892.jpg"
   },
   {
-   "archivo": "fotos/054-dsc02897.jpg",
-   "miniatura": "fotos/min/054-dsc02897.jpg",
+   "archivo": "fotos/058-dsc02896.jpg",
+   "miniatura": "fotos/min/058-dsc02896.jpg",
+   "categoria": "Fotografías",
+   "titulo": "",
+   "nota": "",
+   "ancho": 1600,
+   "alto": 2400,
+   "peso_kb": 640,
+   "original": "DSC02896.jpg"
+  },
+  {
+   "archivo": "fotos/059-dsc02897.jpg",
+   "miniatura": "fotos/min/059-dsc02897.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -603,8 +658,8 @@
    "original": "DSC02897.jpg"
   },
   {
-   "archivo": "fotos/055-dsc02899.jpg",
-   "miniatura": "fotos/min/055-dsc02899.jpg",
+   "archivo": "fotos/060-dsc02899.jpg",
+   "miniatura": "fotos/min/060-dsc02899.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -614,8 +669,8 @@
    "original": "DSC02899.jpg"
   },
   {
-   "archivo": "fotos/056-dsc02906.jpg",
-   "miniatura": "fotos/min/056-dsc02906.jpg",
+   "archivo": "fotos/061-dsc02906.jpg",
+   "miniatura": "fotos/min/061-dsc02906.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -625,8 +680,8 @@
    "original": "DSC02906.jpg"
   },
   {
-   "archivo": "fotos/057-dsc02918.jpg",
-   "miniatura": "fotos/min/057-dsc02918.jpg",
+   "archivo": "fotos/062-dsc02918.jpg",
+   "miniatura": "fotos/min/062-dsc02918.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -636,8 +691,8 @@
    "original": "DSC02918.jpg"
   },
   {
-   "archivo": "fotos/058-dsc02928.jpg",
-   "miniatura": "fotos/min/058-dsc02928.jpg",
+   "archivo": "fotos/063-dsc02928.jpg",
+   "miniatura": "fotos/min/063-dsc02928.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -647,8 +702,8 @@
    "original": "DSC02928.jpg"
   },
   {
-   "archivo": "fotos/059-dsc02931.jpg",
-   "miniatura": "fotos/min/059-dsc02931.jpg",
+   "archivo": "fotos/064-dsc02931.jpg",
+   "miniatura": "fotos/min/064-dsc02931.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -658,8 +713,8 @@
    "original": "DSC02931.jpg"
   },
   {
-   "archivo": "fotos/060-dsc02938.jpg",
-   "miniatura": "fotos/min/060-dsc02938.jpg",
+   "archivo": "fotos/065-dsc02938.jpg",
+   "miniatura": "fotos/min/065-dsc02938.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -669,8 +724,8 @@
    "original": "DSC02938.jpg"
   },
   {
-   "archivo": "fotos/061-dsc02941.jpg",
-   "miniatura": "fotos/min/061-dsc02941.jpg",
+   "archivo": "fotos/066-dsc02941.jpg",
+   "miniatura": "fotos/min/066-dsc02941.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -680,8 +735,8 @@
    "original": "DSC02941.jpg"
   },
   {
-   "archivo": "fotos/062-dsc02951.jpg",
-   "miniatura": "fotos/min/062-dsc02951.jpg",
+   "archivo": "fotos/067-dsc02951.jpg",
+   "miniatura": "fotos/min/067-dsc02951.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -691,8 +746,8 @@
    "original": "DSC02951.jpg"
   },
   {
-   "archivo": "fotos/063-dsc02955.jpg",
-   "miniatura": "fotos/min/063-dsc02955.jpg",
+   "archivo": "fotos/068-dsc02955.jpg",
+   "miniatura": "fotos/min/068-dsc02955.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -702,8 +757,8 @@
    "original": "DSC02955.jpg"
   },
   {
-   "archivo": "fotos/064-dsc02958.jpg",
-   "miniatura": "fotos/min/064-dsc02958.jpg",
+   "archivo": "fotos/069-dsc02958.jpg",
+   "miniatura": "fotos/min/069-dsc02958.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -713,8 +768,8 @@
    "original": "DSC02958.jpg"
   },
   {
-   "archivo": "fotos/065-dsc02968.jpg",
-   "miniatura": "fotos/min/065-dsc02968.jpg",
+   "archivo": "fotos/070-dsc02968.jpg",
+   "miniatura": "fotos/min/070-dsc02968.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -724,8 +779,8 @@
    "original": "DSC02968.jpg"
   },
   {
-   "archivo": "fotos/066-dsc02975.jpg",
-   "miniatura": "fotos/min/066-dsc02975.jpg",
+   "archivo": "fotos/071-dsc02975.jpg",
+   "miniatura": "fotos/min/071-dsc02975.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -735,8 +790,8 @@
    "original": "DSC02975.jpg"
   },
   {
-   "archivo": "fotos/067-dsc02976.jpg",
-   "miniatura": "fotos/min/067-dsc02976.jpg",
+   "archivo": "fotos/072-dsc02976.jpg",
+   "miniatura": "fotos/min/072-dsc02976.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -746,8 +801,8 @@
    "original": "DSC02976.jpg"
   },
   {
-   "archivo": "fotos/068-dsc02985.jpg",
-   "miniatura": "fotos/min/068-dsc02985.jpg",
+   "archivo": "fotos/073-dsc02985.jpg",
+   "miniatura": "fotos/min/073-dsc02985.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -757,8 +812,8 @@
    "original": "DSC02985.jpg"
   },
   {
-   "archivo": "fotos/069-dsc02986.jpg",
-   "miniatura": "fotos/min/069-dsc02986.jpg",
+   "archivo": "fotos/074-dsc02986.jpg",
+   "miniatura": "fotos/min/074-dsc02986.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -768,8 +823,8 @@
    "original": "DSC02986.jpg"
   },
   {
-   "archivo": "fotos/070-dsc02988.jpg",
-   "miniatura": "fotos/min/070-dsc02988.jpg",
+   "archivo": "fotos/075-dsc02988.jpg",
+   "miniatura": "fotos/min/075-dsc02988.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -779,8 +834,8 @@
    "original": "DSC02988.jpg"
   },
   {
-   "archivo": "fotos/071-dsc02989.jpg",
-   "miniatura": "fotos/min/071-dsc02989.jpg",
+   "archivo": "fotos/076-dsc02989.jpg",
+   "miniatura": "fotos/min/076-dsc02989.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -790,8 +845,8 @@
    "original": "DSC02989.jpg"
   },
   {
-   "archivo": "fotos/072-dsc02996.jpg",
-   "miniatura": "fotos/min/072-dsc02996.jpg",
+   "archivo": "fotos/077-dsc02996.jpg",
+   "miniatura": "fotos/min/077-dsc02996.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -801,8 +856,8 @@
    "original": "DSC02996.jpg"
   },
   {
-   "archivo": "fotos/073-dsc02997.jpg",
-   "miniatura": "fotos/min/073-dsc02997.jpg",
+   "archivo": "fotos/078-dsc02997.jpg",
+   "miniatura": "fotos/min/078-dsc02997.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -812,8 +867,8 @@
    "original": "DSC02997.jpg"
   },
   {
-   "archivo": "fotos/074-dsc02998.jpg",
-   "miniatura": "fotos/min/074-dsc02998.jpg",
+   "archivo": "fotos/079-dsc02998.jpg",
+   "miniatura": "fotos/min/079-dsc02998.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -823,8 +878,8 @@
    "original": "DSC02998.jpg"
   },
   {
-   "archivo": "fotos/075-dsc03001.jpg",
-   "miniatura": "fotos/min/075-dsc03001.jpg",
+   "archivo": "fotos/080-dsc03001.jpg",
+   "miniatura": "fotos/min/080-dsc03001.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -834,8 +889,8 @@
    "original": "DSC03001.jpg"
   },
   {
-   "archivo": "fotos/076-dsc03002.jpg",
-   "miniatura": "fotos/min/076-dsc03002.jpg",
+   "archivo": "fotos/081-dsc03002.jpg",
+   "miniatura": "fotos/min/081-dsc03002.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -845,8 +900,8 @@
    "original": "DSC03002.jpg"
   },
   {
-   "archivo": "fotos/077-dsc03006.jpg",
-   "miniatura": "fotos/min/077-dsc03006.jpg",
+   "archivo": "fotos/082-dsc03006.jpg",
+   "miniatura": "fotos/min/082-dsc03006.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -856,8 +911,8 @@
    "original": "DSC03006.jpg"
   },
   {
-   "archivo": "fotos/078-dsc03007.jpg",
-   "miniatura": "fotos/min/078-dsc03007.jpg",
+   "archivo": "fotos/083-dsc03007.jpg",
+   "miniatura": "fotos/min/083-dsc03007.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -867,8 +922,8 @@
    "original": "DSC03007.jpg"
   },
   {
-   "archivo": "fotos/079-dsc03019.jpg",
-   "miniatura": "fotos/min/079-dsc03019.jpg",
+   "archivo": "fotos/084-dsc03019.jpg",
+   "miniatura": "fotos/min/084-dsc03019.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -878,8 +933,8 @@
    "original": "DSC03019.jpg"
   },
   {
-   "archivo": "fotos/080-dsc03024.jpg",
-   "miniatura": "fotos/min/080-dsc03024.jpg",
+   "archivo": "fotos/085-dsc03024.jpg",
+   "miniatura": "fotos/min/085-dsc03024.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -889,8 +944,8 @@
    "original": "DSC03024.jpg"
   },
   {
-   "archivo": "fotos/081-dsc03025.jpg",
-   "miniatura": "fotos/min/081-dsc03025.jpg",
+   "archivo": "fotos/086-dsc03025.jpg",
+   "miniatura": "fotos/min/086-dsc03025.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -900,8 +955,8 @@
    "original": "DSC03025.jpg"
   },
   {
-   "archivo": "fotos/082-dsc03029.jpg",
-   "miniatura": "fotos/min/082-dsc03029.jpg",
+   "archivo": "fotos/087-dsc03029.jpg",
+   "miniatura": "fotos/min/087-dsc03029.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -911,8 +966,8 @@
    "original": "DSC03029.jpg"
   },
   {
-   "archivo": "fotos/083-dsc03031.jpg",
-   "miniatura": "fotos/min/083-dsc03031.jpg",
+   "archivo": "fotos/088-dsc03031.jpg",
+   "miniatura": "fotos/min/088-dsc03031.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -922,8 +977,8 @@
    "original": "DSC03031.jpg"
   },
   {
-   "archivo": "fotos/084-dsc03032.jpg",
-   "miniatura": "fotos/min/084-dsc03032.jpg",
+   "archivo": "fotos/089-dsc03032.jpg",
+   "miniatura": "fotos/min/089-dsc03032.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -933,8 +988,8 @@
    "original": "DSC03032.jpg"
   },
   {
-   "archivo": "fotos/085-dsc03037.jpg",
-   "miniatura": "fotos/min/085-dsc03037.jpg",
+   "archivo": "fotos/090-dsc03037.jpg",
+   "miniatura": "fotos/min/090-dsc03037.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -944,8 +999,8 @@
    "original": "DSC03037.jpg"
   },
   {
-   "archivo": "fotos/086-dsc03054.jpg",
-   "miniatura": "fotos/min/086-dsc03054.jpg",
+   "archivo": "fotos/091-dsc03054.jpg",
+   "miniatura": "fotos/min/091-dsc03054.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -955,8 +1010,8 @@
    "original": "DSC03054.jpg"
   },
   {
-   "archivo": "fotos/087-dsc03066.jpg",
-   "miniatura": "fotos/min/087-dsc03066.jpg",
+   "archivo": "fotos/092-dsc03066.jpg",
+   "miniatura": "fotos/min/092-dsc03066.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -966,8 +1021,8 @@
    "original": "DSC03066.jpg"
   },
   {
-   "archivo": "fotos/088-dsc03067.jpg",
-   "miniatura": "fotos/min/088-dsc03067.jpg",
+   "archivo": "fotos/093-dsc03067.jpg",
+   "miniatura": "fotos/min/093-dsc03067.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -977,8 +1032,8 @@
    "original": "DSC03067.jpg"
   },
   {
-   "archivo": "fotos/089-dsc03070.jpg",
-   "miniatura": "fotos/min/089-dsc03070.jpg",
+   "archivo": "fotos/094-dsc03070.jpg",
+   "miniatura": "fotos/min/094-dsc03070.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -988,8 +1043,8 @@
    "original": "DSC03070.jpg"
   },
   {
-   "archivo": "fotos/090-dsc03079.jpg",
-   "miniatura": "fotos/min/090-dsc03079.jpg",
+   "archivo": "fotos/095-dsc03079.jpg",
+   "miniatura": "fotos/min/095-dsc03079.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -999,8 +1054,8 @@
    "original": "DSC03079.jpg"
   },
   {
-   "archivo": "fotos/091-dsc03080.jpg",
-   "miniatura": "fotos/min/091-dsc03080.jpg",
+   "archivo": "fotos/096-dsc03080.jpg",
+   "miniatura": "fotos/min/096-dsc03080.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1010,8 +1065,8 @@
    "original": "DSC03080.jpg"
   },
   {
-   "archivo": "fotos/092-dsc03081.jpg",
-   "miniatura": "fotos/min/092-dsc03081.jpg",
+   "archivo": "fotos/097-dsc03081.jpg",
+   "miniatura": "fotos/min/097-dsc03081.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1021,8 +1076,8 @@
    "original": "DSC03081.jpg"
   },
   {
-   "archivo": "fotos/093-dsc03090.jpg",
-   "miniatura": "fotos/min/093-dsc03090.jpg",
+   "archivo": "fotos/098-dsc03090.jpg",
+   "miniatura": "fotos/min/098-dsc03090.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1032,8 +1087,8 @@
    "original": "DSC03090.jpg"
   },
   {
-   "archivo": "fotos/094-dsc03091.jpg",
-   "miniatura": "fotos/min/094-dsc03091.jpg",
+   "archivo": "fotos/099-dsc03091.jpg",
+   "miniatura": "fotos/min/099-dsc03091.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1043,8 +1098,8 @@
    "original": "DSC03091.jpg"
   },
   {
-   "archivo": "fotos/095-dsc03095.jpg",
-   "miniatura": "fotos/min/095-dsc03095.jpg",
+   "archivo": "fotos/100-dsc03095.jpg",
+   "miniatura": "fotos/min/100-dsc03095.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1054,8 +1109,8 @@
    "original": "DSC03095.jpg"
   },
   {
-   "archivo": "fotos/096-dsc03096.jpg",
-   "miniatura": "fotos/min/096-dsc03096.jpg",
+   "archivo": "fotos/101-dsc03096.jpg",
+   "miniatura": "fotos/min/101-dsc03096.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1065,8 +1120,8 @@
    "original": "DSC03096.jpg"
   },
   {
-   "archivo": "fotos/097-dsc03106.jpg",
-   "miniatura": "fotos/min/097-dsc03106.jpg",
+   "archivo": "fotos/102-dsc03106.jpg",
+   "miniatura": "fotos/min/102-dsc03106.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1076,8 +1131,8 @@
    "original": "DSC03106.jpg"
   },
   {
-   "archivo": "fotos/098-dsc03107.jpg",
-   "miniatura": "fotos/min/098-dsc03107.jpg",
+   "archivo": "fotos/103-dsc03107.jpg",
+   "miniatura": "fotos/min/103-dsc03107.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1087,8 +1142,8 @@
    "original": "DSC03107.jpg"
   },
   {
-   "archivo": "fotos/099-dsc03113.jpg",
-   "miniatura": "fotos/min/099-dsc03113.jpg",
+   "archivo": "fotos/104-dsc03113.jpg",
+   "miniatura": "fotos/min/104-dsc03113.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1098,8 +1153,8 @@
    "original": "DSC03113.jpg"
   },
   {
-   "archivo": "fotos/100-dsc03119.jpg",
-   "miniatura": "fotos/min/100-dsc03119.jpg",
+   "archivo": "fotos/105-dsc03119.jpg",
+   "miniatura": "fotos/min/105-dsc03119.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1109,8 +1164,8 @@
    "original": "DSC03119.jpg"
   },
   {
-   "archivo": "fotos/101-dsc03120.jpg",
-   "miniatura": "fotos/min/101-dsc03120.jpg",
+   "archivo": "fotos/106-dsc03120.jpg",
+   "miniatura": "fotos/min/106-dsc03120.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1120,8 +1175,8 @@
    "original": "DSC03120.jpg"
   },
   {
-   "archivo": "fotos/102-dsc03124.jpg",
-   "miniatura": "fotos/min/102-dsc03124.jpg",
+   "archivo": "fotos/107-dsc03124.jpg",
+   "miniatura": "fotos/min/107-dsc03124.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1131,8 +1186,8 @@
    "original": "DSC03124.jpg"
   },
   {
-   "archivo": "fotos/103-dsc03126.jpg",
-   "miniatura": "fotos/min/103-dsc03126.jpg",
+   "archivo": "fotos/108-dsc03126.jpg",
+   "miniatura": "fotos/min/108-dsc03126.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1142,8 +1197,8 @@
    "original": "DSC03126.jpg"
   },
   {
-   "archivo": "fotos/104-dsc03127.jpg",
-   "miniatura": "fotos/min/104-dsc03127.jpg",
+   "archivo": "fotos/109-dsc03127.jpg",
+   "miniatura": "fotos/min/109-dsc03127.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1153,8 +1208,8 @@
    "original": "DSC03127.jpg"
   },
   {
-   "archivo": "fotos/105-dsc03128.jpg",
-   "miniatura": "fotos/min/105-dsc03128.jpg",
+   "archivo": "fotos/110-dsc03128.jpg",
+   "miniatura": "fotos/min/110-dsc03128.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1164,8 +1219,8 @@
    "original": "DSC03128.jpg"
   },
   {
-   "archivo": "fotos/106-dsc03132.jpg",
-   "miniatura": "fotos/min/106-dsc03132.jpg",
+   "archivo": "fotos/111-dsc03132.jpg",
+   "miniatura": "fotos/min/111-dsc03132.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1175,8 +1230,8 @@
    "original": "DSC03132.jpg"
   },
   {
-   "archivo": "fotos/107-dsc03141.jpg",
-   "miniatura": "fotos/min/107-dsc03141.jpg",
+   "archivo": "fotos/112-dsc03141.jpg",
+   "miniatura": "fotos/min/112-dsc03141.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1186,8 +1241,19 @@
    "original": "DSC03141.jpg"
   },
   {
-   "archivo": "fotos/108-dsc03154.jpg",
-   "miniatura": "fotos/min/108-dsc03154.jpg",
+   "archivo": "fotos/113-dsc03151.jpg",
+   "miniatura": "fotos/min/113-dsc03151.jpg",
+   "categoria": "Fotografías",
+   "titulo": "",
+   "nota": "",
+   "ancho": 1600,
+   "alto": 2400,
+   "peso_kb": 637,
+   "original": "DSC03151.jpg"
+  },
+  {
+   "archivo": "fotos/114-dsc03154.jpg",
+   "miniatura": "fotos/min/114-dsc03154.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1197,8 +1263,8 @@
    "original": "DSC03154.jpg"
   },
   {
-   "archivo": "fotos/109-dsc03156.jpg",
-   "miniatura": "fotos/min/109-dsc03156.jpg",
+   "archivo": "fotos/115-dsc03156.jpg",
+   "miniatura": "fotos/min/115-dsc03156.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1208,8 +1274,8 @@
    "original": "DSC03156.jpg"
   },
   {
-   "archivo": "fotos/110-dsc03158.jpg",
-   "miniatura": "fotos/min/110-dsc03158.jpg",
+   "archivo": "fotos/116-dsc03158.jpg",
+   "miniatura": "fotos/min/116-dsc03158.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1219,8 +1285,8 @@
    "original": "DSC03158.jpg"
   },
   {
-   "archivo": "fotos/111-dsc03159.jpg",
-   "miniatura": "fotos/min/111-dsc03159.jpg",
+   "archivo": "fotos/117-dsc03159.jpg",
+   "miniatura": "fotos/min/117-dsc03159.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1230,8 +1296,8 @@
    "original": "DSC03159.jpg"
   },
   {
-   "archivo": "fotos/112-dsc03160.jpg",
-   "miniatura": "fotos/min/112-dsc03160.jpg",
+   "archivo": "fotos/118-dsc03160.jpg",
+   "miniatura": "fotos/min/118-dsc03160.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1241,8 +1307,8 @@
    "original": "DSC03160.jpg"
   },
   {
-   "archivo": "fotos/113-dsc03161.jpg",
-   "miniatura": "fotos/min/113-dsc03161.jpg",
+   "archivo": "fotos/119-dsc03161.jpg",
+   "miniatura": "fotos/min/119-dsc03161.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1252,8 +1318,8 @@
    "original": "DSC03161.jpg"
   },
   {
-   "archivo": "fotos/114-dsc03164.jpg",
-   "miniatura": "fotos/min/114-dsc03164.jpg",
+   "archivo": "fotos/120-dsc03164.jpg",
+   "miniatura": "fotos/min/120-dsc03164.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1263,8 +1329,8 @@
    "original": "DSC03164.jpg"
   },
   {
-   "archivo": "fotos/115-dsc03165.jpg",
-   "miniatura": "fotos/min/115-dsc03165.jpg",
+   "archivo": "fotos/121-dsc03165.jpg",
+   "miniatura": "fotos/min/121-dsc03165.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1274,8 +1340,8 @@
    "original": "DSC03165.jpg"
   },
   {
-   "archivo": "fotos/116-dsc03166.jpg",
-   "miniatura": "fotos/min/116-dsc03166.jpg",
+   "archivo": "fotos/122-dsc03166.jpg",
+   "miniatura": "fotos/min/122-dsc03166.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1285,8 +1351,8 @@
    "original": "DSC03166.jpg"
   },
   {
-   "archivo": "fotos/117-dsc03167.jpg",
-   "miniatura": "fotos/min/117-dsc03167.jpg",
+   "archivo": "fotos/123-dsc03167.jpg",
+   "miniatura": "fotos/min/123-dsc03167.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1296,8 +1362,8 @@
    "original": "DSC03167.jpg"
   },
   {
-   "archivo": "fotos/118-dsc03171.jpg",
-   "miniatura": "fotos/min/118-dsc03171.jpg",
+   "archivo": "fotos/124-dsc03171.jpg",
+   "miniatura": "fotos/min/124-dsc03171.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1307,8 +1373,8 @@
    "original": "DSC03171.jpg"
   },
   {
-   "archivo": "fotos/119-dsc03178.jpg",
-   "miniatura": "fotos/min/119-dsc03178.jpg",
+   "archivo": "fotos/125-dsc03178.jpg",
+   "miniatura": "fotos/min/125-dsc03178.jpg",
    "categoria": "Fotografías",
    "titulo": "",
    "nota": "",
@@ -1316,17 +1382,6 @@
    "alto": 2400,
    "peso_kb": 554,
    "original": "DSC03178.jpg"
-  },
-  {
-   "archivo": "fotos/120-dsc03184.jpg",
-   "miniatura": "fotos/min/120-dsc03184.jpg",
-   "categoria": "Fotografías",
-   "titulo": "",
-   "nota": "",
-   "ancho": 1600,
-   "alto": 2400,
-   "peso_kb": 542,
-   "original": "DSC03184.jpg"
   }
  ]
 }

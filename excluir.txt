@@ -1,0 +1,11 @@
+# Fotos que NO deben salir en la galería.
+#
+# Escribe una por línea, con el nombre del archivo original.
+# Ejemplo:
+#   DSC03184.jpg
+#
+# Las líneas que empiezan con # no se leen.
+# Los archivos originales NO se borran: solo se dejan fuera del sitio.
+
+# El autor sosteniendo el libro, con gesto serio. Pedido del cliente.
+DSC03184.jpg

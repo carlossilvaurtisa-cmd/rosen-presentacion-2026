@@ -31,6 +31,7 @@ DIR_WEB     = RAIZ / 'fotos'           # salida: fotos comprimidas
 DIR_MIN     = DIR_WEB / 'min'          # salida: miniaturas
 DIR_DESC    = RAIZ / 'descargas'       # salida: el ZIP
 CSV_LEYENDAS = RAIZ / 'leyendas.csv'   # títulos y notas, editable
+ARCH_EXCLUIR = RAIZ / 'excluir.txt'    # fotos que no salen, editable
 ARCH_MANIF   = RAIZ / 'fotos.json'     # la lista que lee el sitio
 ARCH_ZIP     = DIR_DESC / 'rosen-fotografias.zip'
 
@@ -169,6 +170,47 @@ def escribir_leyendas(filas):
         escritor.writeheader()
         for fila in filas:
             escritor.writerow(fila)
+
+
+# ------------------------------------------------------------
+# LAS EXCLUSIONES (excluir.txt)
+# ------------------------------------------------------------
+# Una foto por línea, con el nombre del archivo original. Las que
+# estén ahí NO salen en la galería. Los originales NO se borran:
+# solo se dejan fuera de la página. Es la forma de sacar una foto
+# sin que vuelva a aparecer la próxima vez que corras el script.
+PLANTILLA_EXCLUIR = """\
+# Fotos que NO deben salir en la galería.
+#
+# Escribe una por línea, con el nombre del archivo original.
+# Ejemplo:
+#   DSC03184.jpg
+#
+# Las líneas que empiezan con # no se leen.
+# Los archivos originales NO se borran: solo se dejan fuera del sitio.
+"""
+
+
+def leer_exclusiones():
+    """Devuelve el conjunto de nombres de archivo que hay que dejar fuera."""
+    if not ARCH_EXCLUIR.exists():
+        with open(ARCH_EXCLUIR, 'w', encoding='utf-8') as f:
+            f.write(PLANTILLA_EXCLUIR)
+        return set()
+
+    fuera = set()
+    with open(ARCH_EXCLUIR, 'r', encoding='utf-8-sig') as f:
+        for linea in f:
+            nombre = linea.strip()
+            if not nombre or nombre.startswith('#'):
+                continue
+            fuera.add(nombre.lower())
+    return fuera
+
+
+def esta_excluida(ruta, excluidas):
+    """¿Esta foto está en la lista de exclusiones? Compara con y sin extensión."""
+    return ruta.name.lower() in excluidas or ruta.stem.lower() in excluidas
 # FIN BLOQUE 22
 
 
@@ -354,6 +396,19 @@ def main():
         print('  Formatos que reconozco: ' + ', '.join(sorted(EXTENSIONES)) + '\n')
         return
 
+    # Sacar las que estén en excluir.txt (no se borran: solo no salen)
+    excluidas = leer_exclusiones()
+    if excluidas:
+        antes = len(entrantes)
+        entrantes = [(r, c) for (r, c) in entrantes if not esta_excluida(r, excluidas)]
+        quitadas = antes - len(entrantes)
+        if quitadas:
+            print('\n  Fuera de la galería por excluir.txt: %d foto(s).' % quitadas)
+
+    if not entrantes:
+        print('\n  Todas las fotos están excluidas en excluir.txt. Nada que hacer.\n')
+        return
+
     print('\n  Encontré %d fotos. Preparando...\n' % len(entrantes))
     borrar_salidas_anteriores()
     leyendas = leer_leyendas()
@@ -392,6 +447,7 @@ def main():
     print('  ' + '-' * 54)
     print('\n  Archivos que puedes editar:')
     print('   · leyendas.csv  → títulos y notas de cada foto')
+    print('   · excluir.txt   → fotos que NO deben salir en la galería')
     print('   · index.html    → los textos de la portada')
     print('\n  Para verlo:  python preparar_fotos.py --servir\n')
 
