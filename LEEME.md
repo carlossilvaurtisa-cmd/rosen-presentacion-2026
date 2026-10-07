@@ -131,16 +131,73 @@ python preparar_fotos.py --servir                    # ver el resultado
 
 ---
 
-## Publicar para mandarle el enlace al cliente
+## El sitio publicado
 
-La carpeta entera es el sitio. Se sube tal cual, sin compilar nada:
+**https://carlossilvaurtisa-cmd.github.io/rosen-presentacion-2026/**
+
+Ese es el enlace que se le manda al cliente. Está servido por GitHub Pages.
+
+| | |
+|---|---|
+| Repositorio | `carlossilvaurtisa-cmd/rosen-presentacion-2026` |
+| Rama y carpeta | `main`, raíz del repositorio |
+| Cuenta | `carlossilvaurtisa-cmd` (GitHub Free) |
+
+**Para actualizar el sitio** después de cambiar algo (textos, fotos nuevas):
+
+```
+cd entrega-fotos
+git add -A
+git commit -m "lo que cambie"
+git push
+```
+
+GitHub Pages vuelve a compilar solo, en un minuto o dos. Para ver cómo va:
+
+```
+gh api repos/carlossilvaurtisa-cmd/rosen-presentacion-2026/pages --jq .status
+```
+
+Debe decir `built`.
+
+### ⚠️ Dos cosas que hay que saber
+
+1. **El repositorio es público.** GitHub Free no permite publicar Pages desde un
+   repositorio privado. Eso significa que las 120 fotos están accesibles no solo
+   por la dirección de la galería, sino también por el repositorio. Le puse
+   `noindex` a la página y un `robots.txt` que les pide a los buscadores que no la
+   indexen, pero **no es una galería con contraseña**. Si necesitás algo
+   realmente privado, hay que pasar a otro servicio (Netlify o Cloudflare Pages,
+   que sí permiten proteger el sitio).
+
+2. **El ZIP pesa 76 MB y está dentro del repositorio.** Git avisó que supera los
+   50 MB recomendados. Funciona, pero si algún día se suben muchas más fotos o
+   archivos más pesados, conviene sacarlo del repositorio y dejar solo el enlace
+   de alta resolución.
+
+### El enlace de alta resolución
+
+Los archivos originales, sin comprimir, están en MEGA:
+
+**https://mega.nz/folder/HcAgSQDZ#vQMIJpQkxL67mMblBRcq2w**
+
+Aparece en dos lugares del sitio: el botón **Alta resolución** de la barra de
+arriba, y la nota del pie. Para cambiarlo, reemplaza esa dirección en
+`index.html` — está en el **BLOQUE 2** (el botón) y en el **BLOQUE 5** (el pie).
+
+---
+
+## Publicar en otro lado (si algún día hace falta)
+
+La carpeta entera es el sitio: se sube tal cual, sin compilar nada.
 
 - **Netlify Drop** → arrastra la carpeta `entrega-fotos` a `app.netlify.com/drop`.
-  Devuelve un enlace en segundos.
-- **Cloudflare Pages**, **Vercel** o **GitHub Pages** funcionan igual.
+  Devuelve un enlace en segundos y permite protegerlo con contraseña.
+- **Cloudflare Pages** o **Vercel** funcionan parecido, pero ojo: Cloudflare
+  rechaza archivos de más de 25 MB, y nuestro ZIP pesa 76 MB.
 
-Antes de subirla, corre el script una última vez para que el ZIP y las miniaturas
-queden al día.
+Antes de subir a cualquier lado, corre el script una última vez para que el ZIP y
+las miniaturas queden al día.
 
 ---
 
@@ -154,6 +211,8 @@ entrega-fotos/
   preparar_fotos.py     el script que prepara todo
   fotos.json            la lista de fotos (lo escribe el script)
   leyendas.csv          títulos y notas (editable)
+  robots.txt            le pide a los buscadores que no indexen la galería
+  .nojekyll             le dice a GitHub Pages que no procese los archivos
   originales/           ← aquí pones las fotos crudas
   fotos/                fotos comprimidas + min/
   descargas/            el ZIP
